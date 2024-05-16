@@ -1,0 +1,46 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+
+a:link {
+  color: #0055AA;
+}
+
+a:visited {
+  color: #0055AA;
+}
+
+a:hover {
+  color: #0055AA;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+    color: #003366;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color:white;
+    width: 0%;
+    content: "";
+    height: 4px;
+    /* transition: all 0.5s; */
+  }
+  
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+  }
+

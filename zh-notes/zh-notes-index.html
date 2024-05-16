@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap core CSS -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="../zh-CN-files/css/bootstrap.min.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="../zh-CN-files/css/zh-li.css">
+	<script src="./js/zh-note.js"></script>
+	<!-- <link rel="shortcut icon" href="files/favicon.ico"> -->
+
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> -->
+
+	<title>李恺文</title>
+
+</head>
+
+
+<body id="Home">
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #003366;">
+		<div class="container">
+		<a class="navbar-brand" href="../index_zh.html" style="font-size: 24px">李恺文</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+	  		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index_zh.html" style="color:white; font-size: 20px">回到主页</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+
+	<div class="container" style="padding-top: 50px;">
+		<div align="center">
+			<h2 class="text-center"  align="center">
+				笔记
+			</h2>
+			<h4 class="text-center"  align="center">
+				（记录，备忘，分享）
+			</h4><br>
+		</div>
+	</div>
+
+	<!--<hr style="width:70%;">-->
+
+	
+	<div class="container">
+		<div>
+			<button type="button" id="select0" class="btn btn-outline-dark" onclick="showPubs(0); return false;">显示所有</button>
+			<span class="d-inline-block align-middle">&nbsp;&nbsp;按主题：</span>
+			<button type="button" id="select1" class="btn btn-outline-dark" onclick="showPubs(1); return false;">光学/OCT</button>
+			<button type="button" id="select2" class="btn btn-outline-dark" onclick="showPubs(2); return false;">计算机</button>
+
+		</div>
+		
+		<br>
+
+
+		<div id="notes"></div>
+
+
+		<script id="all_notes">
+			
+	
+			<div class="row" align="center">
+				<div class="col-md-2">
+					<font color="black">2023-11-21</font>
+				</div>
+				<div class="col-md-1">
+					<font color="black">NO.1</font>
+				</div>
+				<div class="col-md-9" align='left'>
+					<b><font color="black">Note 1</font></b>
+				</div>
+			</div>
+
+			<div class="row" align="center">
+				<div class="col-md-2">
+					<font color="black">2023-11-21</font>
+				</div>
+				<div class="col-md-1">
+					<font color="black">NO.2</font>
+				</div>
+				<div class="col-md-9" align='left'>
+					<b><font color="black">Note 2</font></b>
+				</div>
+			</div>
+
+
+		</script>
+
+
+		<script id="pubs_by_topic">
+			
+			<div class="row" align="center">
+				<div class="col-md-2">
+					<font color="black">2023-11-21</font>
+				</div>
+				<div class="col-md-1">
+					<font color="black">NO.3</font>
+				</div>
+				<div class="col-md-9" align='left'>
+					<b><font color="black">note 3</font></b>
+				</div>
+			</div>
+
+			<div class="row" align="center">
+				<div class="col-md-2">
+					<font color="black">2023-11-21</font>
+				</div>
+				<div class="col-md-1">
+					<font color="black">NO.4</font>
+				</div>
+				<div class="col-md-9" align='left'>
+					<b><font color="black">note 4</font></b>
+				</div>
+			</div>
+
+
+		</script>
+
+
+
+	</div><br>
+
+	<script>showPubs(0);</script>
+
+	<!-- <div class="container">
+		<hr>
+		<center>
+			<footer>
+				<p> </p>
+			</footer>
+		</center>
+	</div> -->
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+
+	<script src="../zh-CN-files/js/jquery-3.2.1.slim.min.js"></script>
+	<script src="../zh-CN-files/js/popper.min.js"></script>
+	<script src="../zh-CN-files/js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>
